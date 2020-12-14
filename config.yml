@@ -1,0 +1,11 @@
+setting:
+  base_directory: 'img' # 元画像フォルダ
+  compile_directory: 'resized' # コンパイル先フォルダ（作成される）
+  profile: true # プロファイル情報 true = 削除
+  resize:
+    # リサイズ幅(相対比率設定:合わせる側を大きな数値に設定することで小さい数値の方から相対設定される---RMagickの仕様)
+    width: 4000
+    height: 10000
+  max_KB: false # 最大画像サイズ or false
+  quality_reduce: 1 # 最大画像サイズまで最適化(%値)をいくつずつ下げるか、少ないほど処理は遅くなる
+  over_path: 'over.png' #合成画像path or false
